@@ -1,0 +1,6 @@
+framework module Pods_SOCIO {
+  umbrella header "Pods-SOCIO-umbrella.h"
+
+  export *
+  module * { export * }
+}

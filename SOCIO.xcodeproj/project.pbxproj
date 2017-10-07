@@ -14,6 +14,9 @@
 		562A62001F84E685007E9160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562A61FF1F84E685007E9160 /* Assets.xcassets */; };
 		562A62031F84E685007E9160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562A62011F84E685007E9160 /* LaunchScreen.storyboard */; };
 		562A620B1F84E79F007E9160 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 562A620A1F84E79F007E9160 /* GoogleService-Info.plist */; };
+		56D64ECA1F88F49D00E91F5A /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D64EC91F88F49D00E91F5A /* FancyView.swift */; };
+		56D64ECD1F88F61F00E91F5A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D64ECC1F88F61F00E91F5A /* Constants.swift */; };
+		56D64ECF1F88F7FD00E91F5A /* Round Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D64ECE1F88F7FD00E91F5A /* Round Button.swift */; };
 		F78B256CF1D571CE4E0FEEF2 /* Pods_SOCIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B642BD0DB49BE98F5D5B0495 /* Pods_SOCIO.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,9 @@
 		562A62021F84E685007E9160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		562A62041F84E685007E9160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		562A620A1F84E79F007E9160 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		56D64EC91F88F49D00E91F5A /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		56D64ECC1F88F61F00E91F5A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		56D64ECE1F88F7FD00E91F5A /* Round Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Round Button.swift"; sourceTree = "<group>"; };
 		5D3C655622E7D2424089BB9D /* Pods-SOCIO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOCIO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SOCIO/Pods-SOCIO.debug.xcconfig"; sourceTree = "<group>"; };
 		B642BD0DB49BE98F5D5B0495 /* Pods_SOCIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOCIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -65,6 +71,7 @@
 		562A61F41F84E684007E9160 /* SOCIO */ = {
 			isa = PBXGroup;
 			children = (
+				56D64ECB1F88F60B00E91F5A /* UTIL */,
 				562A620C1F855A5B007E9160 /* Model */,
 				562A620D1F855A63007E9160 /* Controller */,
 				562A61F51F84E684007E9160 /* AppDelegate.swift */,
@@ -97,8 +104,18 @@
 		562A620E1F855A89007E9160 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				56D64EC91F88F49D00E91F5A /* FancyView.swift */,
+				56D64ECE1F88F7FD00E91F5A /* Round Button.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		56D64ECB1F88F60B00E91F5A /* UTIL */ = {
+			isa = PBXGroup;
+			children = (
+				56D64ECC1F88F61F00E91F5A /* Constants.swift */,
+			);
+			name = UTIL;
 			sourceTree = "<group>";
 		};
 		88D863C0F8057414AD542476 /* Pods */ = {
@@ -243,8 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56D64ECD1F88F61F00E91F5A /* Constants.swift in Sources */,
 				562A61F81F84E684007E9160 /* SignInVC.swift in Sources */,
 				562A61F61F84E684007E9160 /* AppDelegate.swift in Sources */,
+				56D64ECF1F88F7FD00E91F5A /* Round Button.swift in Sources */,
+				56D64ECA1F88F49D00E91F5A /* FancyView.swift in Sources */,
 				562A61FE1F84E684007E9160 /* SOCIO.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,6 +12,8 @@ import FBSDKLoginKit
 import Firebase
 
 class SignInVC: UIViewController {
+    @IBOutlet weak var email_field: UITextField!
+    @IBOutlet weak var password_field: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +25,7 @@ class SignInVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func fb_btnlogin(_ sender: Round_Button) 
+    @IBAction func fb_btnlogin(_ sender: Round_Button)
  {
         
         let facebookLogin = FBSDKLoginManager()
@@ -52,5 +54,36 @@ class SignInVC: UIViewController {
             }
         }
     }
+    
+    @IBAction func signin_tap(_ sender: Any) {
+        if let email = email_field.text, let pwd = password_field.text {
+            Auth.auth().signIn(withEmail: email, password: pwd, completion: { (user, error) in
+                if error == nil {
+                print("HD: email user auth with Firebase")
+                }else {
+                   Auth.auth().createUser(withEmail: email, password: pwd, completion: { (user, error) in
+                    if error != nil {
+                        print("HD: Unable to auth with firebase using E-mail")
+                    } else {
+                        print("HD: Successfully auth with Firebase using E-mail")
+                    }
+                   })
+                }
+        })
+        
+        
+        
+        }
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 }

@@ -17,6 +17,7 @@
 		56D64ECA1F88F49D00E91F5A /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D64EC91F88F49D00E91F5A /* FancyView.swift */; };
 		56D64ECD1F88F61F00E91F5A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D64ECC1F88F61F00E91F5A /* Constants.swift */; };
 		56D64ECF1F88F7FD00E91F5A /* Round Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D64ECE1F88F7FD00E91F5A /* Round Button.swift */; };
+		56FA05D61F8A3E0D00849421 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA05D51F8A3E0D00849421 /* Feed.swift */; };
 		F78B256CF1D571CE4E0FEEF2 /* Pods_SOCIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B642BD0DB49BE98F5D5B0495 /* Pods_SOCIO.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		56D64EC91F88F49D00E91F5A /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		56D64ECC1F88F61F00E91F5A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		56D64ECE1F88F7FD00E91F5A /* Round Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Round Button.swift"; sourceTree = "<group>"; };
+		56FA05D51F8A3E0D00849421 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		5D3C655622E7D2424089BB9D /* Pods-SOCIO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOCIO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SOCIO/Pods-SOCIO.debug.xcconfig"; sourceTree = "<group>"; };
 		B642BD0DB49BE98F5D5B0495 /* Pods_SOCIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOCIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				562A61F71F84E684007E9160 /* SignInVC.swift */,
+				56FA05D51F8A3E0D00849421 /* Feed.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				56D64ECD1F88F61F00E91F5A /* Constants.swift in Sources */,
 				562A61F81F84E684007E9160 /* SignInVC.swift in Sources */,
 				562A61F61F84E684007E9160 /* AppDelegate.swift in Sources */,
+				56FA05D61F8A3E0D00849421 /* Feed.swift in Sources */,
 				56D64ECF1F88F7FD00E91F5A /* Round Button.swift in Sources */,
 				56D64ECA1F88F49D00E91F5A /* FancyView.swift in Sources */,
 				562A61FE1F84E684007E9160 /* SOCIO.xcdatamodeld in Sources */,

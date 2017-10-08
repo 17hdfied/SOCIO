@@ -9,3 +9,4 @@
 import UIKit
 
 let color_gray : CGFloat = 155.0 / 255.0
+let Key_chain = "uid"

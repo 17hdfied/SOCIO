@@ -31,6 +31,7 @@
 		562A62021F84E685007E9160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		562A62041F84E685007E9160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		562A620A1F84E79F007E9160 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		56719B3B1F890E3E00ECB793 /* SOCIO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SOCIO.entitlements; sourceTree = "<group>"; };
 		56D64EC91F88F49D00E91F5A /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		56D64ECC1F88F61F00E91F5A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		56D64ECE1F88F7FD00E91F5A /* Round Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Round Button.swift"; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 		562A61F41F84E684007E9160 /* SOCIO */ = {
 			isa = PBXGroup;
 			children = (
+				56719B3B1F890E3E00ECB793 /* SOCIO.entitlements */,
 				56D64ECB1F88F60B00E91F5A /* UTIL */,
 				562A620C1F855A5B007E9160 /* Model */,
 				562A620D1F855A63007E9160 /* Controller */,
@@ -172,6 +174,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = P56G6X7SJ4;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -389,6 +396,7 @@
 			baseConfigurationReference = 5D3C655622E7D2424089BB9D /* Pods-SOCIO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SOCIO/SOCIO.entitlements;
 				DEVELOPMENT_TEAM = P56G6X7SJ4;
 				INFOPLIST_FILE = SOCIO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -403,6 +411,7 @@
 			baseConfigurationReference = 3227B422CE3DBB0678D83CB1 /* Pods-SOCIO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SOCIO/SOCIO.entitlements;
 				DEVELOPMENT_TEAM = P56G6X7SJ4;
 				INFOPLIST_FILE = SOCIO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

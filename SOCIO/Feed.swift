@@ -11,6 +11,7 @@ import SwiftKeychainWrapper
 import Firebase
 
 class Feed: UIViewController {
+    @IBOutlet weak var tableview: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,13 +19,12 @@ class Feed: UIViewController {
         
     }
 
-    @IBAction func signout_btn(_ sender: Any) {
+  
+    @IBAction func logout_btn(_ sender: Any) {
         let keychainResult = KeychainWrapper.standard.removeObject(forKey: Key_chain)
         print("HD: ID removed from keychain \(keychainResult)")
         try! Auth.auth().signOut()
         performSegue(withIdentifier: "gotosignin", sender: nil)
-        
-        
     }
    
     

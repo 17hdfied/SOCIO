@@ -16,6 +16,7 @@ class Feed: UIViewController,UITableViewDelegate,UITableViewDataSource,UIImagePi
     
         var posts = [Post]()
     var imagePicker: UIImagePickerController!
+   static var imageCache: NSCache<NSString, UIImage> = NSCache()
     override func viewDidLoad() {
         super.viewDidLoad()
         tableview.delegate = self
@@ -87,8 +88,14 @@ class Feed: UIViewController,UITableViewDelegate,UITableViewDataSource,UIImagePi
          let post = posts[indexPath.row]
         if let cell = tableview.dequeueReusableCell(withIdentifier: "postcell") as? PostCell
         {
+            
+            if let img = Feed.imageCache.object(forKey: post.imageURL as NSString)
+            {
+                cell.configureCell(post: post, img: img)
+                return cell
+            } else {
             cell.configureCell(post: post)
-            return cell
+                return cell}
         } else {
             return PostCell()
         }

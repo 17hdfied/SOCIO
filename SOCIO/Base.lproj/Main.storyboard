@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,14 +18,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOK-AT-pN6">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOCIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxS-tY-YnZ">
-                                        <rect key="frame" x="8" y="18" width="304" height="30"/>
+                                        <rect key="frame" x="8" y="18" width="359" height="30"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="23"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -41,10 +41,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sE5-gs-vE5">
-                                <rect key="frame" x="0.0" y="403" width="320" height="77"/>
+                                <rect key="frame" x="0.0" y="590" width="375" height="77"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If You haven't signed in then You can get it automatically" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fn4-pG-lVY">
-                                        <rect key="frame" x="8" y="4" width="304" height="69"/>
+                                        <rect key="frame" x="8" y="4" width="359" height="69"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -60,7 +60,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the Sign In Method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljk-cb-v9b">
-                                <rect key="frame" x="0.0" y="64" width="320" height="24"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="FoD-zB-Kje"/>
                                 </constraints>
@@ -69,22 +69,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lU3-IA-WOH">
-                                <rect key="frame" x="30" y="261" width="260" height="134"/>
+                                <rect key="frame" x="30" y="261" width="315" height="134"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qxi-8R-UPd">
-                                        <rect key="frame" x="0.0" y="0.0" width="260" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R85-1R-3hZ">
-                                        <rect key="frame" x="0.0" y="45" width="260" height="30"/>
+                                        <rect key="frame" x="0.0" y="45" width="315" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGL-f5-Gue">
-                                        <rect key="frame" x="0.0" y="90" width="260" height="44"/>
+                                        <rect key="frame" x="0.0" y="90" width="315" height="44"/>
                                         <color key="backgroundColor" red="0.33073177933692932" green="0.73939108848571777" blue="0.83434110879898071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="23"/>
                                         <state key="normal" title="Sign In">
@@ -97,7 +97,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKU-Gz-SHa" customClass="Round_Button" customModule="SOCIO" customModuleProvider="target">
-                                <rect key="frame" x="95" y="106" width="130" height="130"/>
+                                <rect key="frame" x="122.5" y="106" width="130" height="130"/>
                                 <color key="backgroundColor" red="0.2317950427532196" green="0.34907326102256775" blue="0.59601563215255737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="qas-YE-Bj0"/>
@@ -149,14 +149,14 @@
                         <viewControllerLayoutGuide type="bottom" id="B14-i8-s2i"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="izM-Z3-K8i">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7aM-65-c0E" customClass="FancyView" customModule="SOCIO" customModuleProvider="target">
-                                <rect key="frame" x="16" y="64" width="288" height="65"/>
+                                <rect key="frame" x="16" y="64" width="343" height="65"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Write Something....." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Akb-2s-fOY">
-                                        <rect key="frame" x="72" y="12" width="144" height="41"/>
+                                        <rect key="frame" x="72" y="12" width="199" height="41"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -169,7 +169,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBq-Qw-0hq" customClass="Round_Button" customModule="SOCIO" customModuleProvider="target">
-                                        <rect key="frame" x="230" y="7" width="50" height="50"/>
+                                        <rect key="frame" x="285" y="7" width="50" height="50"/>
                                         <color key="backgroundColor" red="0.33073177933692932" green="0.73939108848571777" blue="0.83434110879898071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Fjs-vH-7MV"/>
@@ -195,14 +195,14 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="347" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PgU-ak-F7L">
-                                <rect key="frame" x="0.0" y="137" width="320" height="343"/>
+                                <rect key="frame" x="0.0" y="137" width="375" height="530"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="postcell" rowHeight="347" id="I1b-nB-D3t" customClass="PostCell" customModule="SOCIO" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="347"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="347"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I1b-nB-D3t" id="cyn-8T-iLZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="347"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="347"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5af-Hg-gq4" customClass="FancyView" customModule="SOCIO" customModuleProvider="target">
@@ -292,11 +292,18 @@
                                                 <constraint firstAttribute="trailing" secondItem="5af-Hg-gq4" secondAttribute="trailing" constant="16" id="wnx-UG-AxQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="caption" destination="xmK-Ey-eBo" id="tWK-zF-4Bh"/>
+                                            <outlet property="likeslbl" destination="aoB-AM-wPG" id="h7J-Kr-SE5"/>
+                                            <outlet property="postImg" destination="crk-uN-B3a" id="o5d-rA-atT"/>
+                                            <outlet property="profiling" destination="YHr-16-rG2" id="0gO-4t-jnd"/>
+                                            <outlet property="usernamelbl" destination="jIY-yS-v3U" id="ZiF-8j-Ddx"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zD-pa-nGN">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WjI-mu-9d4">
                                         <rect key="frame" x="8" y="23" width="30" height="30"/>
@@ -310,7 +317,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6a-u1-20g">
-                                        <rect key="frame" x="134.5" y="25" width="51.5" height="27.5"/>
+                                        <rect key="frame" x="162" y="25" width="51.5" height="27.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="27.5" id="2Oi-IN-JTn"/>
                                             <constraint firstAttribute="width" constant="51.5" id="a5q-gt-Yv4"/>
@@ -351,7 +358,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cF0-O6-U8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="906.39999999999998" y="137.18140929535232"/>
+            <point key="canvasLocation" x="773" y="138"/>
         </scene>
     </scenes>
     <resources>

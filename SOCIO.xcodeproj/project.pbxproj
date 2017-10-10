@@ -21,6 +21,7 @@
 		56FA05D81F8AAAD500849421 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA05D71F8AAAD500849421 /* CircleView.swift */; };
 		56FA05DA1F8B7FBA00849421 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA05D91F8B7FBA00849421 /* PostCell.swift */; };
 		56FA05DD1F8D0AA800849421 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA05DC1F8D0AA700849421 /* DataServices.swift */; };
+		56FA05DF1F8D214300849421 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA05DE1F8D214300849421 /* Post.swift */; };
 		F78B256CF1D571CE4E0FEEF2 /* Pods_SOCIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B642BD0DB49BE98F5D5B0495 /* Pods_SOCIO.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		56FA05D71F8AAAD500849421 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		56FA05D91F8B7FBA00849421 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		56FA05DC1F8D0AA700849421 /* DataServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+		56FA05DE1F8D214300849421 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		5D3C655622E7D2424089BB9D /* Pods-SOCIO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOCIO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SOCIO/Pods-SOCIO.debug.xcconfig"; sourceTree = "<group>"; };
 		B642BD0DB49BE98F5D5B0495 /* Pods_SOCIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOCIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 		562A620C1F855A5B007E9160 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				56FA05DE1F8D214300849421 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56FA05D81F8AAAD500849421 /* CircleView.swift in Sources */,
+				56FA05DF1F8D214300849421 /* Post.swift in Sources */,
 				56D64ECD1F88F61F00E91F5A /* Constants.swift in Sources */,
 				562A61F81F84E684007E9160 /* SignInVC.swift in Sources */,
 				562A61F61F84E684007E9160 /* AppDelegate.swift in Sources */,

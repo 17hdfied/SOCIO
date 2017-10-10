@@ -19,6 +19,8 @@
 		56D64ECF1F88F7FD00E91F5A /* Round Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D64ECE1F88F7FD00E91F5A /* Round Button.swift */; };
 		56FA05D61F8A3E0D00849421 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA05D51F8A3E0D00849421 /* Feed.swift */; };
 		56FA05D81F8AAAD500849421 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA05D71F8AAAD500849421 /* CircleView.swift */; };
+		56FA05DA1F8B7FBA00849421 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA05D91F8B7FBA00849421 /* PostCell.swift */; };
+		56FA05DD1F8D0AA800849421 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA05DC1F8D0AA700849421 /* DataServices.swift */; };
 		F78B256CF1D571CE4E0FEEF2 /* Pods_SOCIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B642BD0DB49BE98F5D5B0495 /* Pods_SOCIO.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		56D64ECE1F88F7FD00E91F5A /* Round Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Round Button.swift"; sourceTree = "<group>"; };
 		56FA05D51F8A3E0D00849421 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		56FA05D71F8AAAD500849421 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		56FA05D91F8B7FBA00849421 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		56FA05DC1F8D0AA700849421 /* DataServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 		5D3C655622E7D2424089BB9D /* Pods-SOCIO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOCIO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SOCIO/Pods-SOCIO.debug.xcconfig"; sourceTree = "<group>"; };
 		B642BD0DB49BE98F5D5B0495 /* Pods_SOCIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOCIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				56719B3B1F890E3E00ECB793 /* SOCIO.entitlements */,
+				56FA05DB1F8D0A8E00849421 /* Services */,
 				56D64ECB1F88F60B00E91F5A /* UTIL */,
 				562A620C1F855A5B007E9160 /* Model */,
 				562A620D1F855A63007E9160 /* Controller */,
@@ -114,6 +119,7 @@
 				56D64EC91F88F49D00E91F5A /* FancyView.swift */,
 				56D64ECE1F88F7FD00E91F5A /* Round Button.swift */,
 				56FA05D71F8AAAD500849421 /* CircleView.swift */,
+				56FA05D91F8B7FBA00849421 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -124,6 +130,14 @@
 				56D64ECC1F88F61F00E91F5A /* Constants.swift */,
 			);
 			name = UTIL;
+			sourceTree = "<group>";
+		};
+		56FA05DB1F8D0A8E00849421 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				56FA05DC1F8D0AA700849421 /* DataServices.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		88D863C0F8057414AD542476 /* Pods */ = {
@@ -278,6 +292,8 @@
 				562A61F81F84E684007E9160 /* SignInVC.swift in Sources */,
 				562A61F61F84E684007E9160 /* AppDelegate.swift in Sources */,
 				56FA05D61F8A3E0D00849421 /* Feed.swift in Sources */,
+				56FA05DD1F8D0AA800849421 /* DataServices.swift in Sources */,
+				56FA05DA1F8B7FBA00849421 /* PostCell.swift in Sources */,
 				56D64ECF1F88F7FD00E91F5A /* Round Button.swift in Sources */,
 				56D64ECA1F88F49D00E91F5A /* FancyView.swift in Sources */,
 				562A61FE1F84E684007E9160 /* SOCIO.xcdatamodeld in Sources */,

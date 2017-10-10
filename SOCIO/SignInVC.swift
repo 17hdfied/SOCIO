@@ -53,8 +53,8 @@ class SignInVC: UIViewController {
             } else {
                 print("Successful Sign In buddy")
                 if let user = user
-                {
-                    self.completeSignInid(id: user.uid)
+                {   let userData = ["provider":credential.provider]
+                    self.completeSignInid(id: user.uid, userData: userData)
                 }
             }
         }
@@ -66,7 +66,8 @@ class SignInVC: UIViewController {
                 if error == nil {
                 print("HD: email user auth with Firebase")
                     if user == user{
-                        self.completeSignInid(id: (user?.uid)!) }
+                        let userData = ["provider":user?.providerID]
+                        self.completeSignInid(id: (user?.uid)!, userData:userData as! Dictionary<String, String>) }
                 }else {
                    Auth.auth().createUser(withEmail: email, password: pwd, completion: { (user, error) in
                     if error != nil {
@@ -74,7 +75,8 @@ class SignInVC: UIViewController {
                     } else {
                         print("HD: Successfully auth with Firebase using E-mail")
                         if user == user {
-                            self.completeSignInid(id: (user?.uid)!)
+                             let userData = ["provider":user?.providerID]
+                            self.completeSignInid(id: (user?.uid)!, userData: userData as! Dictionary<String, String>)
                         }
                     }
                    })
@@ -88,8 +90,9 @@ class SignInVC: UIViewController {
     }
     
     
-    func completeSignInid(id: String)
+    func completeSignInid(id: String,userData:Dictionary<String, String>)
     {
+        DataServices.ds.createFirebaseUser(uid: id, userData: userData)
       let keychainresult =  KeychainWrapper.standard.set(id, forKey: Key_chain)
         print("HD: data saved in keychain successfully \(keychainresult)")
         performSegue(withIdentifier: "gotofeed", sender: nil)

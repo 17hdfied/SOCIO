@@ -161,12 +161,16 @@
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post" translatesAutoresizingMaskIntoConstraints="NO" id="smX-gf-siW" customClass="CircleView" customModule="SOCIO" customModuleProvider="target">
+                                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post" translatesAutoresizingMaskIntoConstraints="NO" id="smX-gf-siW" customClass="CircleView" customModule="SOCIO" customModuleProvider="target">
                                         <rect key="frame" x="8" y="7" width="50" height="50"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="5Xm-ay-OsF"/>
                                             <constraint firstAttribute="width" constant="50" id="acH-oi-ham"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="9RF-TB-Na4" appends="YES" id="fsZ-eO-GhL"/>
+                                        </connections>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBq-Qw-0hq" customClass="Round_Button" customModule="SOCIO" customModuleProvider="target">
                                         <rect key="frame" x="285" y="7" width="50" height="50"/>
@@ -352,11 +356,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addimg" destination="smX-gf-siW" id="AV4-De-kJl"/>
                         <outlet property="tableview" destination="PgU-ak-F7L" id="21R-m3-2z9"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="gotosignin" id="Dgp-MV-UU9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cF0-O6-U8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="9RF-TB-Na4">
+                    <connections>
+                        <action selector="add_imagetap:" destination="WoO-1R-x5w" id="Wfx-Hp-PLd"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="773" y="138"/>
         </scene>
